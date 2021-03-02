@@ -1,0 +1,401 @@
+/* Шапка сайта и навигация */
+body {
+   font-family: 'Ubuntu', sans-serif;
+   letter-spacing: 0.2em;
+
+}
+.header {
+   width: 100;
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+.logo_img {
+   display: block;
+   width: 65px;
+   height: 65px;
+   background: url(../img/logo1.svg) bottom left/44px 44px no-repeat, url(../img/logo2.svg) top right/44px 44px no-repeat;
+}
+.logo_text {
+   font-size: 32px;
+   color: #F7654A;
+   padding-left: 30px;
+}
+.nav_bottom {
+   background: url(../img/menu_bottom1.svg) center center/55px 55px no-repeat;
+   width: 65px;
+   height: 65px;
+   display: flex;
+   justify-content: center;
+}
+
+/* Основные стили */
+
+.page {
+   width: 100%;
+   height: 100%;
+   border-bottom: 1px solid #787878;
+   padding: 40px 0;
+   padding-bottom: 60px;
+}
+.separotor {
+   background-color: #787878;
+   border: none;
+   justify-content: space-between;
+   padding: 20px 0;
+}
+.box {
+   max-width: 1200px;
+   width: 100%;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 0 auto;
+}
+.box_title {
+   position: relative;
+   top: -60px;
+   box-sizing: border-box;
+   margin: 0 auto;
+   padding: 5px 5px;
+   color: #686868;
+   font-size: 28px;
+   font-weight: bold;
+   background-color: #F7F7F7;
+   letter-spacing: 0.2em;
+   text-transform: uppercase;
+}
+.box_in_box {
+   margin: 15px auto;
+   padding: 0 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+/* Блок 1 (название сайта) */
+
+.title_main {
+   width: 100%;
+   font-size: 48px;
+   font-weight: 500;
+   color: #fff;
+   text-align: center;
+   margin: 15px 0 15px 0;
+}
+.text_main {
+   color: #fff;
+   width: 100%;
+   font-size: 24px;
+   text-align: center;
+   margin: 0 0 15px 0;
+   font-weight: 400;
+}
+
+/* Блок 2 (про опыт) */
+.opyt {
+   padding: 0 10px;
+   width: 100%;
+   max-width: 1200px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   font-family: 'Oswald', normal;
+   color: #F7654A;
+}
+.opyt h1 {
+   font-size: 36px;
+}
+.opyt h2 {
+   padding: 10px 0;
+}
+.opyt_text {
+   width: 25%;
+   text-align: center;
+}
+
+/* Блок 3 (про проекты) */
+
+
+.proekt {
+   display: flex;
+   flex-direction: column;
+   align-items:stretch;
+   width: 30%;
+   max-width: 350px;
+}
+.proekt_img {
+   height: 100%;
+   max-height: 450px;
+}
+.proekt p {
+   font-family: 'Oswald', normal;
+   font-size: 22px;
+   padding: 10px 0;
+}
+.proekt h4 {
+   font-family: 'Open sans', normal;
+   font-size: 16px;
+   padding: 10px 0;
+   letter-spacing: 0.1em;
+   color: #5D5D5D;
+}
+.line {
+   width: 35px;
+   height: 8px;
+}
+
+/* Блок 4 (разделитель) */
+
+.offer {
+   max-width: 1200px;
+   display:flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   margin: 0 auto;
+}
+.separotor_title {
+   font-size: 48px;
+   font-weight: 500;
+   color: #fff;
+   text-align: center;
+   margin: 15px 100px 15px 0;
+   display: flex;
+   align-items: center;
+}
+
+
+.separotor_text {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: nowrap;
+   font-size: 24px;
+   font-weight: 500;
+   color: #F7654A;
+   text-align: left;
+   margin: 15px 100px 15px 0;
+   background-color: #fff;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+.separotor_text p {
+   margin-left: 10px;
+}
+.separotor_text:hover p{
+   color: #686868;
+}
+
+/* Блок 5 (чем занимаемся) */
+
+.rabota {
+   align-items:center;
+   justify-content: center;
+   padding: 10px;
+}
+.rabota p {
+   font-family: 'Oswald', normal;
+   font-size: 14px;
+   padding: 10px;
+   text-align: center;
+   letter-spacing: 0.1em;
+   line-height: 20px;
+}
+
+/* Блок 6 строка из фото */
+.foto {
+   height: 375px;
+   width: 100%;
+   background-image: url(../img/fon2.png);
+   background-repeat:repeat-x;
+   padding: 0 0 100px 0;
+   margin: 0;
+   background-size: 25%;
+}
+
+/* Блок 7 ответы на вопросы */
+.faq ul {
+   position: relative;
+   top: -30px;
+   margin-left: 100px;
+}
+.faq li {
+   list-style-image: url(../img/polygon.svg);
+   font-family: 'Oswald';
+   font-size: 32px;
+   color: #F7654A;
+   line-height: 65px;
+}
+.faq h1 {
+   font-family: 'open Sans';
+   font-weight: 400;
+   font-size: 16px;
+   color: #999999;
+   padding-right: 30%;
+   text-align: justify;
+}
+
+/* Блок 8 ответы на вопросы */
+
+.partners_title {
+   top: -5px;
+}
+.partners {
+   display: flex;
+   justify-content: space-between;
+}
+.partners_logo {
+   box-sizing: border-box;
+   justify-content: center;
+   margin: 5px 20px;
+}
+/* Блок 9 отзывы */
+
+.otzyv {
+   display: flex;
+   flex-direction: column;
+   width: 30%;
+   max-width: 450px;
+   align-items: flex-start;
+   margin: 15px 15px;
+   padding-bottom: 50px;
+}
+.otzyv_img {
+   height: 100%;
+   max-height: 25px;
+   padding: 15px 0;
+}
+.otzyv_img2 {
+   height: 100%;
+   max-height: 25px;
+   padding: 0;
+   transform: rotate(180deg);
+   margin-left: 85%;
+}
+.author p {
+   font-weight:bold;
+}
+.author h2 {
+   letter-spacing: 0.1em;
+   color: #686868;
+}
+
+/* Блок 10 контакты */
+
+
+.kontakts {
+   flex-wrap: nowrap;
+}
+.kontakts_box {
+   margin: 15px auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: nowrap;
+}
+.kontakts_box p {
+   font-family: 'Oswald', normal;
+   font-weight: 400;
+   color: #F7654A;
+   text-align: center;
+}
+.kontakts_box h1 {
+   color: #686868;
+   font-family: 'open sans';
+   text-transform: lowercase;
+   margin-bottom: 5px;
+}
+.kontakts_img {
+   height: 100%;
+   max-height: 45px;
+   padding: 0 0 15px 0;
+}
+
+.footer {
+   justify-content: space-between;
+   color: #fff;
+}
+.footer a {
+   color: #fff;
+   font-family: "Oswald", normal;
+   margin: 0;
+   padding: 0;
+}
+.footer p {
+   color: #fff;
+   font-family: "Oswald", normal;
+   margin: 0;
+   padding: 0;
+}
+.button_contacts {
+   position: absolute;
+   top: 150px;
+   right: 250px;
+   transform: rotate3d(1, 1, 1, 45deg);
+   perspective: 40px;
+}
+
+
+section {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.container {
+   perspective: 400px;
+   margin: 0 40px;
+   background: rgba(195,209,212, .7);
+   border-radius: 5px;
+   position: absolute;
+   top: 210px;
+   right: 350px;
+
+
+}
+.style-flat {
+   transform-style: flat;
+}
+.flip {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   padding: 0 10px;
+   transform: rotateX(70deg);
+   border-radius: 5px;
+   background: #F7654A;
+   -webkit-animation: rotate 3s infinite;
+   animation: rotate 3s infinite;
+   color: #fff;
+   flex-wrap: nowrap;
+   font-size: 24px;
+   font-weight: 500;
+}
+.flip p {
+   font-family: 'Oswald', normal;
+   margin: 0 5px 0 15px;
+}
+@keyframes rotate {
+  50% {
+    transform: none;
+    }
+}
+   .scrollup{
+   width:40px;
+   height:40px;
+   opacity:0.8;
+   position:fixed;
+   bottom:150px;
+   right:100px;
+   display:none;
+   text-indent:-9999px;
+   background: url('../img/icon_top.png') no-repeat;
+
+}
